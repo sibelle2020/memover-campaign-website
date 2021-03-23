@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me-Mover Campaign</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hke5kwu.css" />
+  </head>
+
+  <body>
+    <header>
+      <video id="videoBG" poster="/img/memover-family.jpg" autoplay muted loop>
+        <source src="" type="video/webm" />
+        <source src="" type="video/mp4" />
+      </video>
+
+      <div class="navbar-wrapper">
+        <img
+          src="/img/me-mover-white.png"
+          alt="Me-Mover logo in white"
+          class="logo-img"
+        />
+        <nav class="navbar">
+          <ul class="nav-ul">
+            <li class="nav-item">
+              <a href="https://me-mover.dk/en/homepage/" class="nav-link"
+                >Official Site</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#form-section" class="nav-link">Free Trial</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="form-section">
+        <div class="form-section-wrapper">
+          <form name="signup" class="signup-trial-form" autocomplete="on">
+            <h3>Free Trial</h3>
+            <div class="form-elements">
+              <label for="first-name">First Name</label>
+              <input type="text" name="firstname" id="first-name" required />
+              <label for="last-name">Last Name</label>
+              <input type="text" name="lastname" id="last-name" required />
+              <label for="enter-email">Email</label>
+              <input type="email" name="email" id="enter-email" required />
+              <label for="group-trial">Group Lesson</label>
+              <input
+                type="radio"
+                name="trialtype"
+                id="group-trial"
+                value="group"
+              />
+              <label for="solo-trial">Solo Lesson</label>
+              <input
+                type="radio"
+                name="trialtype"
+                id="solo-trial"
+                value="solo"
+              />
+              <input type="date" name="date" id="booking-date" required />
+              <button type="submit">SEND</button>
+            </div>
+          </form>
+          <div class="video-box"></div>
+        </div>
+      </section>
+
+      <article id="about-section">
+        <div class="about-section-wrapper">
+          <img src="" alt="" class="about-img" />
+          <section class="about-memover">
+            <h3></h3>
+            <p></p>
+          </section>
+        </div>
+      </article>
+      <article id="contact-section">
+        <h3></h3>
+      </article>
+    </main>
+    <footer></footer>
+
+    <script src="/js/home.js"></script>
+  </body>
+</html>

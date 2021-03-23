@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blue-color: #005f7b;
+  --dark-grey-color: #404040;
+  --light-grey-color: #d1d1d1;
+
+  --headline-font: "termina", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 400;
+  background-color: white;
+  color: #404040;
+}
+
+/* HEADER STYLE---------------------------------------------------------->*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-grey-color);
+  position: relative;
+}
+
+#videoBG {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-img {
+  width: 150px;
+  padding: 1rem;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-grey-color);
+  padding: 1rem;
+  font-family: var(--headline-font);
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* MAIN STYLE ----------------------------------------------------------->*/
+
+main {
+  width: 100%;
+}
+
+/* sections style -------------------------->*/
+#form-section {
+  height: 100vh;
+}
+
+#about-section {
+  height: 100vh;
+  background-color: var(--light-grey-color);
+}
+
+#contact-section {
+  height: 100vh;
+}
+
+.form-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.signup-trial-form {
+  width: 500px;
+  height: 600px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 6vh;
+}
+
+.video-box {
+  width: 700px;
+  height: 420px;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20vh;
+}
+
+/* form style ------------------------------>*/
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: var(--headline-font);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  color: #005f7b;
+}
+
+/* FOOTER STYLE ---------------------------------------------------------->*/
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--dark-grey-color);
+}
