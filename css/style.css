@@ -44,13 +44,14 @@ header {
 .navbar-wrapper {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 .logo-img {
-  width: 150px;
+  width: 50px;
   padding: 1rem;
+  opacity: 0.9;
 }
 
 .navbar {
@@ -63,6 +64,7 @@ header {
 
 .nav-item {
   list-style: none;
+  margin-top: 2rem;
 }
 
 .nav-link {
@@ -70,9 +72,15 @@ header {
   color: var(--dark-grey-color);
   padding: 1rem;
   font-family: var(--headline-font);
-  font-weight: 200;
+  font-weight: 600;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.nav-img-item {
+  list-style: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 /* MAIN STYLE ----------------------------------------------------------->*/
