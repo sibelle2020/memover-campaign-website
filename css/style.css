@@ -72,8 +72,9 @@ header {
   left: 10vw;
   text-align: center;
   top: 65vh;
-  color: var(--blue-color);
+  color: white;
   z-index: 1;
+  font-weight: 400;
 }
 
 .navbar-wrapper {
