@@ -241,12 +241,6 @@ form p {
   margin-bottom: 1.5rem;
 }
 
-.button-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 button {
   background-color: var(--blue-color);
   padding: 10px;
