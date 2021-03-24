@@ -121,7 +121,7 @@ main {
 }
 
 #about-section {
-  height: 130vh;
+  height: 180vh;
   background-color: var(--light-grey-color);
 }
 
@@ -292,12 +292,27 @@ button {
   margin-bottom: 1.5rem;
 }
 
+.black-memover {
+  max-width: 20vw;
+  padding: 1rem;
+}
+
 /* FOOTER STYLE ---------------------------------------------------------->*/
 
 footer {
-  height: 50vh;
+  height: 20vh;
   width: 100%;
   background-color: var(--dark-grey-color);
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 1.2rem;
+}
+
+.campaign-for {
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 
 /* RESPONSIVENESS ------------------------------------------------------->*/
@@ -334,12 +349,16 @@ footer {
   }
 
   #form-section {
-    height: 175vh;
+    height: 185vh;
     background-color: white;
   }
 
   #about-section {
-    height: 210vh;
+    height: 250vh;
+  }
+
+  .black-memover {
+    max-width: 50vw;
   }
 }
 
