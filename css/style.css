@@ -121,7 +121,7 @@ main {
 }
 
 #about-section {
-  height: 100vh;
+  height: 130vh;
   background-color: var(--light-grey-color);
 }
 
@@ -190,7 +190,7 @@ main {
   gap: 0.5rem;
 }
 
-h3 {
+.sign-up-headline {
   font-family: var(--headline-font);
   text-transform: uppercase;
   font-weight: 600;
@@ -260,6 +260,38 @@ button {
   width: 70%;
 }
 
+/* About style ----------------------------------------------------------->*/
+
+.about-memover {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.about-memover h2 {
+  font-family: var(--headline-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--blue-color);
+  margin-bottom: 1rem;
+}
+
+.about-memover h3 {
+  font-family: var(--headline-font);
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-memover p {
+  width: 60vw;
+  margin-bottom: 1.5rem;
+}
+
 /* FOOTER STYLE ---------------------------------------------------------->*/
 
 footer {
@@ -287,6 +319,10 @@ footer {
     width: 80vw;
   }
 
+  .about-memover p {
+    width: 80vw;
+  }
+
   .signup-trial-form {
     width: 80vw;
     height: 32rem;
@@ -300,6 +336,10 @@ footer {
   #form-section {
     height: 175vh;
     background-color: white;
+  }
+
+  #about-section {
+    height: 210vh;
   }
 }
 
