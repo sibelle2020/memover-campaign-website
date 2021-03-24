@@ -22,7 +22,7 @@
         />
       </video>
 
-      <div class="navbar-wrapper">
+      <div class="navbar-wrapper" id="myNav">
         <nav class="navbar">
           <ul class="nav-ul">
             <li class="nav-item">
@@ -89,10 +89,22 @@
               />
               <label for="booking-date">Choose a date</label>
               <input type="date" name="date" id="booking-date" required />
-              <button type="submit">SEND</button>
+              <div class="button-wrapper">
+                <button type="submit">SUBMIT</button>
+              </div>
             </div>
           </form>
-          <div class="video-box"></div>
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/9GnUHr_nLqw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
 
