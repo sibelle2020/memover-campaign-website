@@ -73,7 +73,7 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/9GnUHr_nLqw"
+              src="https://www.youtube.com/embed/3zmLPl25o30"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -119,7 +119,7 @@
               <label for="booking-date">Choose a date</label>
               <input type="date" name="date" id="booking-date" required />
               <div class="button-wrapper">
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="submit-button">SUBMIT</button>
               </div>
             </div>
           </form>
@@ -188,7 +188,7 @@
         </div>
       </article>
       <article id="contact-section">
-        <h3></h3>
+        <h3 class=""></h3>
         <div class="contact-wrapper">
           <form
             name="contact"
@@ -204,12 +204,18 @@
             </p>
             <div class="form-elements">
               <label for="your-name">Your Name</label>
-              <input type="text" name="name" id="your-name" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your full name here"
+                id="your-name"
+                required
+              />
               <label for="enter-email">Email</label>
-              <input type="email" name="email" id="enter-email" required />
-              <label for="your-message">message</label>
+              <input type="email" name="email" id="your-email" required />
+              <label for="your-message">Message</label>
               <input type="text" name="message" id="your-message" required />
-              <button type="submit">SEND</button>
+              <button type="submit" class="contact-button">SEND</button>
             </div>
           </form>
         </div>
