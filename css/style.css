@@ -116,7 +116,7 @@ main {
 
 /* sections style -------------------------->*/
 #form-section {
-  height: 120vh;
+  height: 130vh;
   background-color: white;
 }
 
@@ -129,11 +129,32 @@ main {
   height: 100vh;
 }
 
+.info-text-wrapper {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.info-text-wrapper h2 {
+  font-family: var(--headline-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--blue-color);
+}
+
+.info-text-wrapper p {
+  width: 60vw;
+}
+
 .form-section-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 
 .signup-trial-form {
@@ -143,6 +164,10 @@ main {
   border-radius: 2px;
   background-color: var(--light-grey-color);
   padding: 2rem;
+}
+
+.info-video-wrapper {
+  width: 50vw;
 }
 
 .video-container {
@@ -251,15 +276,30 @@ footer {
     flex-direction: column;
     gap: 5rem;
     align-items: center;
+    padding-top: 10vh;
+  }
+
+  .info-text-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .info-text-wrapper p {
+    width: 80vw;
+  }
+
+  .signup-trial-form {
+    width: 80vw;
+    height: 32rem;
   }
 
   .video-container {
-    width: 26.27rem;
-    height: 14.75rem;
+    width: 78.8vw;
+    height: 44.25vw;
   }
 
-  .form-section-wrapper {
-    padding-top: 10vh;
+  #form-section {
+    height: 175vh;
+    background-color: white;
   }
 }
 
