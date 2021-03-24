@@ -11,16 +11,18 @@
 
   <body>
     <header>
-      <video id="videoBG" poster="img/memover-family.jpg" autoplay muted loop>
-        <source
-          src="https://sibelledesign.com/me-mover-stuff/campaign-video-background (convert-video-online.com).webm"
-          type="video/webm"
-        />
-        <source
-          src="https://sibelledesign.com/me-mover-stuff/campaign-video-background (convert-video-online.com).mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div class="background-header">
+        <video id="videoBG" poster="img/memover-family.jpg" autoplay muted loop>
+          <source
+            src="https://sibelledesign.com/me-mover-stuff/campaign-video-background (convert-video-online.com).webm"
+            type="video/webm"
+          />
+          <source
+            src="https://sibelledesign.com/me-mover-stuff/campaign-video-background (convert-video-online.com).mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
       <div class="navbar-wrapper" id="myNav">
         <nav class="navbar">
@@ -55,45 +57,6 @@
     <main>
       <section id="form-section">
         <div class="form-section-wrapper">
-          <form
-            name="signup"
-            class="signup-trial-form"
-            method="POST"
-            autocomplete="on"
-            data-netlify="true"
-          >
-            <h3>Free Trial</h3>
-            <p class="form-description">Explain the form</p>
-            <div class="form-elements">
-              <div class="name-elements-wrapper">
-                <label for="first-name">First name</label>
-                <input type="text" name="firstname" id="first-name" required />
-                <label for="last-name">Last name</label>
-                <input type="text" name="lastname" id="last-name" required />
-              </div>
-              <label for="enter-email">Email</label>
-              <input type="email" name="email" id="enter-email" required />
-              <label for="group-trial">Group lesson</label>
-              <input
-                type="radio"
-                name="trialtype"
-                id="group-trial"
-                value="group"
-              />
-              <label for="solo-trial">Solo lesson</label>
-              <input
-                type="radio"
-                name="trialtype"
-                id="solo-trial"
-                value="solo"
-              />
-              <label for="booking-date">Choose a date</label>
-              <input type="date" name="date" id="booking-date" required />
-              <div class="button-wrapper">
-                <button type="submit">SUBMIT</button>
-              </div>
-            </div>
-          </form>
           <div class="video-container">
             <iframe
               width="560"
@@ -105,6 +68,49 @@
               allowfullscreen
             ></iframe>
           </div>
+          <form
+            name="signup"
+            class="signup-trial-form"
+            method="POST"
+            autocomplete="on"
+            data-netlify="true"
+          >
+            <h3>Sign Up</h3>
+            <p class="form-description">
+              Fill out this form to request a one hour free me-mover trial
+              session with an instructor. We'll quickly get back to you with a
+              date confirmation and further information!
+            </p>
+            <div class="form-elements">
+              <label for="first-name">First name</label>
+              <input type="text" name="firstname" id="first-name" required />
+              <label for="last-name">Last name</label>
+              <input type="text" name="lastname" id="last-name" required />
+              <label for="enter-email">Email</label>
+              <input type="email" name="email" id="enter-email" required />
+              <label
+                >Group session
+                <input
+                  type="radio"
+                  name="trialtype"
+                  id="group-trial"
+                  value="group"
+              /></label>
+              <label
+                >Solo session
+                <input
+                  type="radio"
+                  name="trialtype"
+                  id="solo-trial"
+                  value="solo"
+              /></label>
+              <label for="booking-date">Choose a date</label>
+              <input type="date" name="date" id="booking-date" required />
+              <div class="button-wrapper">
+                <button type="submit">SUBMIT</button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
 

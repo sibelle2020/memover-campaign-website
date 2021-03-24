@@ -19,3 +19,13 @@ window.onscroll = function () {
     myNav.classList.remove("nav-shadow");
   }
 };
+
+const smallDevice = window.matchMedia("(max-width: 576px)").matches;
+if (smallDevice) {
+  console.log();
+  document.querySelector("#videoBG").remove();
+  const img = document.createElement("img");
+  img.src = "img/memover-family.jpg";
+  img.alt = "family on me-movers together in copenhagen";
+  document.querySelector(".background-header").appendChild(img);
+}

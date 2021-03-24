@@ -29,8 +29,14 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background-color: var(--light-grey-color);
+  background-color: white;
   position: relative;
+}
+
+.background-header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 #videoBG {
@@ -39,6 +45,10 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.background-header img {
+  max-width: 100%;
 }
 
 .navbar-wrapper {
@@ -82,9 +92,9 @@ header {
   text-decoration: none;
   color: var(--dark-grey-color);
   padding: 1rem;
-  font-family: var(--headline-font);
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-family: var(--text-font);
+  font-weight: 900;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -106,7 +116,7 @@ main {
 
 /* sections style -------------------------->*/
 #form-section {
-  height: 100vh;
+  height: 120vh;
   background-color: white;
 }
 
@@ -123,22 +133,22 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 20vh;
 }
 
 .signup-trial-form {
-  width: 500px;
-  height: 600px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  margin-top: 6vh;
+  width: 25rem;
+  height: 32rem;
+  box-shadow: -1.095px 6.914px 12.96px 3.04px rgba(51, 51, 51, 0.27);
   border-radius: 2px;
-  background-color: white;
+  background-color: var(--light-grey-color);
+  padding: 2rem;
 }
 
 .video-container {
   width: 39.4vw;
   height: 22.125vw;
-  margin-top: 20vh;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -1.095px 6.914px 12.96px 3.04px rgba(51, 51, 51, 0.27);
 }
 
 .video-container iframe {
@@ -152,34 +162,58 @@ main {
 .form-elements {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 h3 {
   font-family: var(--headline-font);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 2rem;
-  margin: 1rem;
-  margin-left: 2rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: flex-start;
-  color: #005f7b;
+  color: var(--dark-grey-color);
+}
+
+form p {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 #first-name {
   background-color: whitesmoke;
+  border: none;
+  height: 1.5rem;
+  border-radius: 20px;
 }
 
 #last-name {
   background-color: whitesmoke;
+  border: none;
+  height: 1.5rem;
+  border-radius: 20px;
 }
 
 #enter-email {
   background-color: whitesmoke;
+  border: none;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+#solo-trial {
+  margin-bottom: 1rem;
 }
 
 #booking-date {
   background-color: whitesmoke;
+  border: none;
+  height: 0.8rem;
+  padding: 0.5rem;
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .button-wrapper {
@@ -198,7 +232,7 @@ button {
   font-family: var(--headline-font);
   font-size: 18px;
   font-weight: 500;
-  width: 50%;
+  width: 70%;
 }
 
 /* FOOTER STYLE ---------------------------------------------------------->*/
@@ -211,9 +245,27 @@ footer {
 
 /* RESPONSIVENESS ------------------------------------------------------->*/
 
+@media (max-width: 900px) {
+  .form-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .video-container {
+    width: 26.27rem;
+    height: 14.75rem;
+  }
+
+  .form-section-wrapper {
+    padding-top: 10vh;
+  }
+}
+
 @media (max-width: 700px) {
   .nav-link {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding: 1.2vw;
   }
 
@@ -227,6 +279,12 @@ footer {
   }
 }
 
+@media (max-width: 576px) {
+  header {
+    height: 40vh;
+  }
+}
+
 @media (max-width: 400px) {
   .nav-link {
     font-size: 1.8vw;
@@ -235,8 +293,5 @@ footer {
 
   .logo-img {
     max-width: 25px;
-  }
-
-  .nav-img-item {
   }
 }
