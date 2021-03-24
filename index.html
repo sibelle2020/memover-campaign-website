@@ -51,29 +51,39 @@
     <main>
       <section id="form-section">
         <div class="form-section-wrapper">
-          <form name="signup" class="signup-trial-form" autocomplete="on">
+          <form
+            name="signup"
+            class="signup-trial-form"
+            method="POST"
+            autocomplete="on"
+            data-netlify="true"
+          >
             <h3>Free Trial</h3>
+            <p class="form-description">Explain the form</p>
             <div class="form-elements">
-              <label for="first-name">First Name</label>
-              <input type="text" name="firstname" id="first-name" required />
-              <label for="last-name">Last Name</label>
-              <input type="text" name="lastname" id="last-name" required />
+              <div class="name-elements-wrapper">
+                <label for="first-name">First name</label>
+                <input type="text" name="firstname" id="first-name" required />
+                <label for="last-name">Last name</label>
+                <input type="text" name="lastname" id="last-name" required />
+              </div>
               <label for="enter-email">Email</label>
               <input type="email" name="email" id="enter-email" required />
-              <label for="group-trial">Group Lesson</label>
+              <label for="group-trial">Group lesson</label>
               <input
                 type="radio"
                 name="trialtype"
                 id="group-trial"
                 value="group"
               />
-              <label for="solo-trial">Solo Lesson</label>
+              <label for="solo-trial">Solo lesson</label>
               <input
                 type="radio"
                 name="trialtype"
                 id="solo-trial"
                 value="solo"
               />
+              <label for="booking-date">Choose a date</label>
               <input type="date" name="date" id="booking-date" required />
               <button type="submit">SEND</button>
             </div>
